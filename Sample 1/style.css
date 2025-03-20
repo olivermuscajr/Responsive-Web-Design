@@ -23,6 +23,10 @@ header {
   transition: all 0.5s ease;
 }
 
+.menu-bar {
+  display: none;
+}
+
 header.scrolled {
   background: #285e67;
   ul li a {
@@ -243,4 +247,47 @@ footer {
 .logo {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 600px) {
+  ul > li {
+    display: none;
+  }
+
+  .header-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .main-content {
+    margin: 8rem 0.2rem;
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
