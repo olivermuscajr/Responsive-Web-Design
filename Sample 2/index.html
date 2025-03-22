@@ -63,6 +63,35 @@
       </div>
     </section>
 
+    <section class="tours">
+      <div class="row">
+        <div class="col content-col">
+          <h1>UPCOMING TOURS & DESTINATION</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col image-col">
+          <div class="image-gallery">
+            <img src="./images/img3.png" alt="" />
+            <img src="./images/img4.png" alt="" />
+            <img src="./images/img5.png" alt="" />
+            <img src="./images/img6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Fifth Avenue, NY 10160, New York, USA | Phone 800-123-123 | Email:
+        contact@example.com
+      </p>
+      <p>
+        Copyright &copy; <span id="copyright-year"></span> Your Company. All
+        rights reserved.
+      </p>
+    </footer>
+
     <script>
       const menuBtn = document.querySelector(".menu-btn");
       const navlinks = document.querySelector(".nav-links");
@@ -70,6 +99,9 @@
       menuBtn.addEventListener("click", () => {
         navlinks.classList.toggle("mobile-menu");
       });
+
+      let currentYear = new Date().getFullYear();
+      document.getElementById("copyright-year").textContent = currentYear;
     </script>
   </body>
 </html>
